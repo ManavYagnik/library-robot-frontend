@@ -1,9 +1,11 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const fetchUser = createAsyncThunk('counter/fetchUser', async () => {
+ 
   const response = await fetch('https://jsonplaceholder.typicode.com/users/1');
-  return response.json();
-});
+ 
+   return response.json();
+ });
 
 const counterSlice = createSlice({
   name: 'counter',
