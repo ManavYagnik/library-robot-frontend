@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Image from 'next/image';
 import "../globals.css"
@@ -10,6 +11,7 @@ import { useEffect } from 'react';
 const Header = () => {
   const dispatch = useDispatch();
   let data = useSelector((state) => state.productData);
+  console.log(data)
 
   return (
     <div className=''>
