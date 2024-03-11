@@ -5,7 +5,7 @@ import Main from "./Components/Main";
 // import { useSelector, useDispatch } from 'react-redux';
 // import { fetchUser } from './Redux/counterSlice';
 import { Provider } from "react-redux";
-import store from "./Redux/store";
+import store from "./Redux/redux/store";
 
 export default function Home() {
  
@@ -17,7 +17,7 @@ export default function Home() {
      <Header />
      
 
-     <Main />
+   
 
    
       
