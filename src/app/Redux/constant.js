@@ -1,2 +1,13 @@
-export const  BOOK_LIST = 'BOOK_LIST'
-
+export const ADD_TO_CART ="ADD_TO_CART";
+export const REMOVE_FROM_CART="REMOVE_FROM_CART";
+export const EMPTY_CART="EMPTY_CART";
+export const PRODUCT_LIST ="PRODUCT_LIST";
+export const SET_PRODUCT_LIST="SET_PRODUCT_LIST";
+export const SEARCH_PRODUCT="SEARCH_PRODUCT";
+export const SEARCH_PRODUCT_BY_CATEGORY="SEARCH_PRODUCT_BY_CATEGORY";
+export const LOADING="LOADING";
+export const LOADED="LOADED";
+// export const ADD_CONTACT="ADD_CONTACT";
+// export const SEARCH_CONTACT="SEARCH_CONTACT";
+// export const SET_CONTACT_LIST="SET_CONTACT_LIST";
+// export const CONTACT_LIST="CONTACT_LIST";
