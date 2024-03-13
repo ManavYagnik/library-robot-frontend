@@ -9,7 +9,7 @@ export const productData = (data = [], action) =>
        
        
         case SET_PRODUCT_LIST:
-            console.log("Product_list condition ", action)
+           
             return [...action.data]
        
             default:

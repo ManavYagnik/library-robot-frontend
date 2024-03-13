@@ -9,7 +9,7 @@ function* getProducts(){
     
     data = yield data.json();
     // data = data.record.product;
-    console.log("Data from bin",data);
+  
 
     
     yield put({type:SET_PRODUCT_LIST,data:data})
@@ -18,10 +18,10 @@ function* getProducts(){
 
 function* searchProducts(data){
     yield put({type:LOADING}) 
-    console.log('Search data',data)
+   
     let result = yield fetch(`https://my-mongo-db-api.onrender.com/api/products/search/${data.query}`);
     result = yield result.json();
-    console.log("action is called", data)
+ 
     yield put({type: SET_PRODUCT_LIST, data:result})
     yield put({type:LOADED})
 
@@ -32,7 +32,7 @@ function* searchProductByCategory (data){
     
     let result = yield fetch(`https://my-mongo-db-api.onrender.com/api/products/${data.query}`);
     result = yield result.json();
-    console.log("action is called", data)
+
     yield put({type: SET_PRODUCT_LIST, data:result})
     yield put({type:LOADED})
 

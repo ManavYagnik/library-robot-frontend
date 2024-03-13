@@ -29,7 +29,7 @@ export const cartData =(data=[], action) =>{
 switch(action.type)
 {
     case ADD_TO_CART:
-        console.warn("ADD_TO_CART CONDITION",action)
+   
     return [action.data, ...data];
 
     case REMOVE_FROM_CART:
@@ -38,13 +38,13 @@ switch(action.type)
         
         const remainingItem=data.filter((item)=>item.id!==action.data);
        
-         console.warn("remainingItem",remainingItem);
+ 
         return [...remainingItem]
       
         
 
     case EMPTY_CART:
-        console.warn("EMPTY_CART condition ", action);
+  
         data =[]
         return [...data];
 

@@ -8,11 +8,12 @@ import { useEffect } from "react";
 function Main() {
   const dispatch = useDispatch();
   let data = useSelector((state) => state.productData);
-  console.log("data in main component from saga", data)
+
 
   useEffect(() => {
     dispatch(productList())
   }, [])
+
   return (
     <div className="">
 
