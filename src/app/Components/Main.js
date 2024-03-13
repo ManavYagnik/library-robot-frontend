@@ -1,6 +1,4 @@
 'use client'
-
-
 import { useDispatch } from "react-redux";
 import { productList } from "../redux/productAction";
 import { useSelector } from "react-redux";
