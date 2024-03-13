@@ -35,7 +35,7 @@ function Main() {
    
         {
           data.map((item) => <div key={item.id} className="product-item">
-            <img src={item.photo} alt="" width={"200px"} height={"200px"} />
+            {/* <img src={item.photo} alt="" width={"200px"} height={"200px"} /> */}
 
             <div>Name: {item.name}</div>
             <div>color : {item.color}</div>
