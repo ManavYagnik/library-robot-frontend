@@ -14,18 +14,7 @@ function Main() {
 
   return (
     <div className="">
-
-      {/* <img src="images/corousel/4.png" width={'100%'} alt=""/> */}
-    
-      {/* <div>
-        <button id="btn3"onClick={() => dispatch(emptyCart())}>EMPTY_CART</button>
-        </div>
-
-        <div>
-        <button id="btn4"onClick={() => dispatch(productList())}>Get Product List</button>
-        </div> */}
-
-      <div className="">
+            <div className="">
         <span className="">Products</span>
       </div>
 
