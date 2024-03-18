@@ -1,6 +1,6 @@
 'use client'
 import { useDispatch } from "react-redux";
-import  {productList } from "../Redux/productAction";
+import  {productList } from "../redux/productAction";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
 function Main() {
@@ -14,7 +14,10 @@ function Main() {
 
   return (
     <div className="">
-            <div className="">
+
+      
+
+      <div className="">
         <span className="">Products</span>
       </div>
 
