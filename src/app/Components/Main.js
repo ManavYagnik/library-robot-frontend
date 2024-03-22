@@ -13,26 +13,26 @@ function Main() {
   }, [])
 
   return (
-    <div className="">
+    <div className="product-container">
 
       
 
-      <div className="">
-        <span className="">Products</span>
+      <div className="product-heading">
+        <span className="">Search Books</span>
       </div>
 
     
-      <div className="">
+      <div className="product-table">
    
         {
           data.map((item) => <div key={item.id} className="product-item">
-            {/* <img src={item.photo} alt="" width={"200px"} height={"200px"} /> */}
+           
 
-            <div>Name: {item.name}</div>
-            <div>color : {item.color}</div>
-            <div>price : {item.price}</div>
-            <div>category : {item.category}</div>
-            <div>brand : {item.brand}</div>
+            < div className="item-widht">Name: {item.name}</ div >
+            < div className="item-widht">color : {item.color}</ div >
+            < div className="item-widht">price : {item.price}</ div >
+            < div className="item-widht">category : {item.category}</ div>
+            < div className="item-widht">brand : {item.brand}</div>
           
              
           </div>)
@@ -40,7 +40,7 @@ function Main() {
   
 
       </div>
-    
+    <div></div>
 
 
     </div>
