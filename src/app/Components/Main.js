@@ -1,6 +1,6 @@
 'use client'
 import { useDispatch } from "react-redux";
-import  {productList } from "../redux/productAction";
+import  {productList } from "../Redux/productAction";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
 function Main() {
