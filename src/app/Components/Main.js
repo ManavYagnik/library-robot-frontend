@@ -28,11 +28,11 @@ function Main() {
           data.map((item) => <div key={item.id} className="product-item">
            
 
-            < div className="item-widht">Name: {item.name}</ div >
-            < div className="item-widht">color : {item.color}</ div >
-            < div className="item-widht">price : {item.price}</ div >
-            < div className="item-widht">category : {item.category}</ div>
-            < div className="item-widht">brand : {item.brand}</div>
+            < div className="item-widht">Book Name: {item.bookname}</ div >
+            < div className="item-widht">Book Color : {item.bookid}</ div >
+            < div className="item-widht">Book Status : {item.status}</ div >
+            {/* < div className="item-widht">category : {item.category}</ div>
+            < div className="item-widht">brand : {item.brand}</div> */}
           
              
           </div>)

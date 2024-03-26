@@ -4,7 +4,7 @@ import {  PRODUCT_LIST, SEARCH_PRODUCT, SET_PRODUCT_LIST,SEARCH_PRODUCT_BY_CATEG
 
 function* getProducts(){
     yield put({type:LOADING}) 
-    let data = yield fetch(`https://my-mongo-db-api.onrender.com/api/products`);
+    let data = yield fetch(`https://backend-library-robot.onrender.com/api/books`);
 
     
     data = yield data.json();
