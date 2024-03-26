@@ -31,7 +31,7 @@ function Main() {
 
             < div className="item-widht">Book Name: {item.bookname}</ div >
             < div className="item-widht">Book Color : {item.bookid}</ div >
-            < div className="item-widht">Book Status : {item.status.toString}</ div >
+            < div className="item-widht">Book Status : {item.status.toString()}</ div >
             {/* < div className="item-widht">category : {item.category}</ div>
             < div className="item-widht">brand : {item.brand}</div> */}
           
