@@ -6,8 +6,10 @@ import { useEffect } from "react";
 function Main() {
   const dispatch = useDispatch();
   let data = useSelector((state) => state.productData);
-  console.log(data)
-
+  // console.log(data)
+  function sendBookname(data){
+    console.log(data);
+  }
 
   useEffect(() => {
     dispatch(productList())
@@ -29,9 +31,9 @@ function Main() {
           data.map((item) => <div key={item.id} className="product-item">
            
 
-            < div className="item-widht">Book Name: {item.bookname}</ div >
+            < div className="item-widht" onClick={sendBookname(item.bookname)}>Book Name: {item.bookname}</ div >
             < div className="item-widht">Book Color : {item.bookid}</ div >
-            < div className="item-widht">Book Status : {item.status.toString()}</ div >
+            < div className="item-widht">Book Status : {item.status}</ div >
             {/* < div className="item-widht">category : {item.category}</ div>
             < div className="item-widht">brand : {item.brand}</div> */}
           
